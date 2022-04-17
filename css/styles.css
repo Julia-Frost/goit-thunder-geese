@@ -37,6 +37,7 @@ header {
   background: #ffffff;
   padding: 60px 56px;
   align-self: center;
+  margin: auto;
 }
 
 .banderogus-title {
@@ -81,6 +82,7 @@ header {
   line-height: 24px;
   color: #ffffff;
   cursor: pointer;
+  border: none;
 }
 
 .main-page-row {
@@ -91,4 +93,93 @@ header {
 
 .banderogus-image {
   align-self: flex-end;
+}
+
+.gus-facts {
+  padding: 0 58px 0 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 52px;
+}
+
+.gus-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 24px;
+  color: #1b1d1f;
+  margin: 16px 0;
+}
+
+.gus-descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #1b1d1f;
+  width: 875px;
+}
+
+.gus-facts-container {
+  width: 1170px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gus-facts-item {
+  width: 33%;
+}
+
+.gus-facts-img {
+}
+
+.gus-facts-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  color: #212328;
+  margin: 12px 0 32px 60px;
+}
+.gus-facts-descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1b1d1f;
+  width: 280px;
+  margin-left: 60px;
+}
+
+.victory-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.victory-bgd {
+  padding: 72px 0;
+  width: 1170px;
+  background: linear-gradient(270deg, #c1e8ff 0%, #ffffff 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 72px;
+}
+
+.ukr-logo {
+}
+
+.victory-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 100px;
+  margin: 16px 0;
+  color: #1b1d1f;
+}
+
+.victory-descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1b1d1f;
+  width: 875px;
+  text-align: center;
 }
