@@ -85,11 +85,6 @@ header {
   border: none;
 }
 
-a {
-  color: white;
-  text-decoration: none;
-}
-
 .main-page-row {
   display: flex;
   justify-content: space-between;
@@ -201,13 +196,17 @@ a {
 }
 
 .modal-form {
-  background: #ffffff;
-  padding: 32px 92px 60px 92px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.modal-form-container {
+  background: #ffffff;
+  padding: 32px 92px 60px 92px;
   position: relative;
 }
+
 .modal-form-title {
   font-weight: 600;
   font-size: 24px;
