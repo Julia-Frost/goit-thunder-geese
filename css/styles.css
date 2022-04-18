@@ -85,6 +85,11 @@ header {
   border: none;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 .main-page-row {
   display: flex;
   justify-content: space-between;
@@ -130,9 +135,6 @@ header {
   width: 33%;
 }
 
-.gus-facts-img {
-}
-
 .gus-facts-title {
   font-weight: 600;
   font-size: 24px;
@@ -162,9 +164,7 @@ header {
   flex-direction: column;
   align-items: center;
   margin-top: 72px;
-}
-
-.ukr-logo {
+  margin-bottom: 72px;
 }
 
 .victory-title {
@@ -182,4 +182,108 @@ header {
   color: #1b1d1f;
   width: 875px;
   text-align: center;
+}
+
+.modal-bgd {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: rgb(27 29 31 / 70%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-form {
+  background: #ffffff;
+  padding: 32px 92px 60px 92px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.modal-form-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  color: #1b1d1f;
+  margin: 32px 0 12px 0;
+}
+
+.modal-form-descr {
+  color: #1b1d1f;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+.modal-form-field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.modal-field-name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 8px;
+  color: #1b1d1f;
+}
+
+.modal-field-input {
+  border: 1px solid #005bbb;
+  box-sizing: border-box;
+  border-radius: 8px;
+  height: 48px;
+  color: #1b1d1f;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 4px 8px;
+}
+
+.modal-form-button {
+  background: #ff6b0a;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  margin-top: 24px;
+}
+
+.close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 24px;
+  color: #1b1d1f;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.modal-descr {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  color: #005bbb;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.modal-active {
+  opacity: 1;
+  pointer-events: all;
 }
