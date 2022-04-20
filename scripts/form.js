@@ -32,6 +32,14 @@ closeBtns.forEach(btn => {
     })
 })
 
+function clearFormFields() {
+    const modalFiends = formModal.querySelectorAll('input');
+
+    modalFiends.forEach( field => { 
+        field.value = ''
+    });
+}
+
 
 form.addEventListener('submit', e => {
     e.preventDefault();
@@ -46,6 +54,7 @@ form.addEventListener('submit', e => {
         closeFormModal();
         setTimeout(openSuccessModal, 700);
         setTimeout(closeSuccessModal, 3000);
+        clearFormFields();
       })
       .catch((error) => console.log('Sending form failed'));
 })
